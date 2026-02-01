@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Barely Working Code</title>
+    <meta name="description" content="Privacy policy for Barely Working Code and its products.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: calc(80px + var(--space-3xl)) var(--space-xl) var(--space-4xl);
+        }
+        .privacy-content h1 {
+            font-size: 2.5rem;
+            color: var(--gray-900);
+            margin-bottom: var(--space-sm);
+        }
+        .privacy-content .effective-date {
+            color: var(--gray-500);
+            font-size: 0.9375rem;
+            margin-bottom: var(--space-3xl);
+        }
+        .privacy-content h2 {
+            font-size: 1.5rem;
+            color: var(--gray-900);
+            margin-top: var(--space-2xl);
+            margin-bottom: var(--space-md);
+            padding-bottom: var(--space-sm);
+            border-bottom: 2px solid var(--blue-100);
+        }
+        .privacy-content h3 {
+            font-size: 1.125rem;
+            color: var(--gray-800);
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-sm);
+        }
+        .privacy-content p {
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: var(--space-md);
+        }
+        .privacy-content ul {
+            margin-bottom: var(--space-md);
+            padding-left: var(--space-xl);
+        }
+        .privacy-content li {
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: var(--space-sm);
+            list-style: disc;
+        }
+        .privacy-content strong {
+            color: var(--gray-800);
+        }
+        .privacy-content .highlight-box {
+            background: var(--blue-50);
+            border-left: 4px solid var(--blue-500);
+            padding: var(--space-lg);
+            margin: var(--space-xl) 0;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        }
+        .privacy-content .highlight-box p {
+            margin-bottom: 0;
+            color: var(--gray-700);
+        }
+        .product-section {
+            background: var(--gray-50);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            margin: var(--space-xl) 0;
+        }
+        .product-section h3 {
+            margin-top: 0;
+            color: var(--blue-700);
+        }
+
+        /* Dark mode fixes */
+        @supports not (-webkit-touch-callout: none) {
+        @media (prefers-color-scheme: dark) {
+            .privacy-content .highlight-box {
+                background: #172554;
+                border-left-color: var(--blue-600);
+            }
+            .privacy-content .highlight-box p {
+                color: var(--gray-700);
+            }
+            .product-section {
+                background: var(--gray-100);
+            }
+            .product-section h3 {
+                color: var(--blue-600);
+            }
+            .privacy-content h2 {
+                border-bottom-color: #1e3a8a;
+            }
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <a href="/" class="logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="6" width="28" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 14L12 18L8 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="16" y1="22" x2="24" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="26" cy="10" r="2" fill="#ef4444"/>
+                </svg>
+                <span class="logo-text">barely<span class="logo-accent">working</span>code</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/#products">Products</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="privacy-content">
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective Date: January 17, 2025</p>
+
+        <div class="highlight-box">
+            <p><strong>The short version:</strong> We don't collect your data. Our products work locally on your device. We have no interest in tracking you, analyzing you, or monetizing your information.</p>
+        </div>
+
+        <h2>Overview</h2>
+        <p>
+            Barely Working Code builds software tools that respect your privacy. We believe in creating useful products without the surveillance capitalism baggage. This policy explains how our products handle your data (spoiler: they mostly don't).
+        </p>
+
+        <h2>General Principles</h2>
+        <ul>
+            <li><strong>Local-first:</strong> Our products process data on your device, not our servers</li>
+            <li><strong>No tracking:</strong> We don't use analytics, tracking pixels, or fingerprinting</li>
+            <li><strong>No accounts:</strong> We don't require sign-ups or collect email addresses</li>
+            <li><strong>No ads:</strong> We don't serve advertisements or sell data to advertisers</li>
+        </ul>
+
+        <h2>Product-Specific Privacy Information</h2>
+
+        <div class="product-section">
+            <h3>Pace Reader (Safari Extension)</h3>
+            <p>
+                Pace Reader provides RSVP speed reading functionality for Safari on macOS and iOS.
+            </p>
+
+            <p><strong>Data Collection:</strong> None. We do not collect, store, or transmit any personal data.</p>
+
+            <p><strong>How It Works:</strong></p>
+            <ul>
+                <li><strong>Text Extraction:</strong> Reads text from web pages when you activate the extension</li>
+                <li><strong>OCR Processing:</strong> For certain web-based bookstores (which may or may not be located in the Pacific Northwest), performs optical character recognition locally using Tesseract.js</li>
+                <li><strong>Local Processing:</strong> All text analysis and display happens on your device</li>
+                <li><strong>No Server Communication:</strong> The extension does not send data to external servers</li>
+            </ul>
+
+            <p><strong>Permissions Used:</strong></p>
+            <ul>
+                <li><strong>activeTab:</strong> Access webpage content when you click the extension button</li>
+                <li><strong>scripting:</strong> Insert the reader interface into web pages</li>
+                <li><strong>tabs:</strong> Detect page types for appropriate text extraction</li>
+            </ul>
+
+            <p><strong>Third-Party Libraries:</strong></p>
+            <ul>
+                <li><strong>Tesseract.js:</strong> OCR processing (downloads training data from official CDN on first use)</li>
+                <li><strong>html2canvas:</strong> Page rendering for OCR</li>
+            </ul>
+            <p>These libraries operate entirely within your browser. No user data is shared with them.</p>
+
+            <p><strong>Data Retention:</strong> None. Text is extracted only during active use. Settings are stored in your browser's localStorage. No history or analytics are collected.</p>
+        </div>
+
+        <div class="product-section">
+            <h3>Sorta Sleep (macOS App)</h3>
+            <p>
+                Sorta Sleep is a diagnostic tool for investigating macOS sleep and power management issues.
+            </p>
+
+            <p><strong>Data Collection:</strong> None. We do not collect, store, or transmit any personal data.</p>
+
+            <p><strong>How It Works:</strong></p>
+            <ul>
+                <li><strong>System Diagnostics:</strong> Reads power management data using macOS system commands (pmset, system_profiler)</li>
+                <li><strong>Apple Intelligence:</strong> Uses on-device Apple AI to summarize diagnostic output in plain language. All AI processing happens locally on your Mac—nothing is sent to external servers</li>
+                <li><strong>Action Log:</strong> Records power management changes you make, stored locally in ~/Library/Application Support/SortaSleep/</li>
+                <li><strong>No Server Communication:</strong> The app does not send data to external servers</li>
+            </ul>
+
+            <p><strong>Permissions Used:</strong></p>
+            <ul>
+                <li><strong>Administrator privileges:</strong> Required for some diagnostic checks and applying fixes (prompted via standard macOS authentication dialog)</li>
+            </ul>
+
+            <p><strong>Data Retention:</strong> Action logs are stored locally on your device until you delete them. No diagnostic data is persisted beyond the current session. No analytics or telemetry are collected.</p>
+        </div>
+
+        <h2>Website</h2>
+        <p>
+            This website (barelyworkingcode.com) is a static site hosted on Cloudflare Pages.
+        </p>
+        <ul>
+            <li>We do not use cookies</li>
+            <li>We do not use analytics or tracking scripts</li>
+            <li>We do not collect form submissions (there are no forms)</li>
+            <li>Cloudflare may collect basic access logs as part of their CDN service</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>
+            Our products do not knowingly collect information from anyone, including children under 13.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+            We may update this policy when we release new products. Changes will be posted at this URL with an updated effective date.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            For questions about this privacy policy:
+        </p>
+        <ul>
+            <li>GitHub: <a href="https://github.com/barelyworkingcode" style="color: var(--blue-600);">github.com/barelyworkingcode</a></li>
+        </ul>
+
+        <div class="highlight-box" style="margin-top: var(--space-3xl);">
+            <p><strong>Summary:</strong> Your data is yours. We don't want it, we don't collect it, and we designed our products so they don't need it.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">barely<span class="logo-accent">working</span>code</span>
+                <p>It works! Barely.</p>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="https://github.com/barelyworkingcode" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://github.com/barelyworkingcode/web/issues" target="_blank" rel="noopener">Report Issue</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Barely Working Code. All rights reserved.</p>
+                <p class="footer-disclaimer">*"Works" is a generous term. Results may vary. Not responsible for raised eyebrows.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

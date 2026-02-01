@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barely Working Code - It works! Barely.</title>
+    <meta name="description" content="Software that technically functions. Home of Pace Reader and Sorta Sleep - apps that probably work.">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.barelyworkingcode.com/">
+    <meta property="og:title" content="Barely Working Code - It works! Barely.">
+    <meta property="og:description" content="Software that technically functions. Home of Pace Reader and Sorta Sleep - apps that probably work.">
+    <meta property="og:image" content="https://www.barelyworkingcode.com/assets/og-image.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.barelyworkingcode.com/">
+    <meta property="twitter:title" content="Barely Working Code - It works! Barely.">
+    <meta property="twitter:description" content="Software that technically functions. Home of Pace Reader and Sorta Sleep - apps that probably work.">
+    <meta property="twitter:image" content="https://www.barelyworkingcode.com/assets/og-image.svg">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <a href="/" class="logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="6" width="28" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 14L12 18L8 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="16" y1="22" x2="24" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="26" cy="10" r="2" fill="#ef4444"/>
+                </svg>
+                <span class="logo-text">barely<span class="logo-accent">working</span>code</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    It works!
+                    <span class="hero-accent">Barely.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Software that technically functions. No promises beyond that.
+                </p>
+                <div class="hero-cta">
+                    <a href="#products" class="btn btn-primary">See Our Products</a>
+                    <span class="hero-note">*They probably work</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line"><span class="prompt">$</span> npm run build</div>
+                        <div class="terminal-line output">Building...</div>
+                        <div class="terminal-line output">Build complete!</div>
+                        <div class="terminal-line output warning">Warning: 47 deprecation notices</div>
+                        <div class="terminal-line output warning">Warning: Works on my machine</div>
+                        <div class="terminal-line output success">Status: Barely functional</div>
+                        <div class="terminal-line"><span class="prompt">$</span> <span class="cursor"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <p>Things we've made that mostly do what they're supposed to</p>
+            </div>
+
+            <div class="product-card featured">
+                <div class="product-badge">Safari Extension</div>
+                <div class="product-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="12" width="48" height="40" rx="4" stroke="currentColor" stroke-width="3"/>
+                        <line x1="8" y1="24" x2="56" y2="24" stroke="currentColor" stroke-width="3"/>
+                        <circle cx="16" cy="18" r="2" fill="#ef4444"/>
+                        <circle cx="24" cy="18" r="2" fill="#fbbf24"/>
+                        <circle cx="32" cy="18" r="2" fill="#22c55e"/>
+                        <text x="32" y="42" text-anchor="middle" font-family="Space Mono, monospace" font-size="12" font-weight="bold" fill="currentColor">
+                            <tspan fill="#ef4444">w</tspan><tspan>ord</tspan>
+                        </text>
+                    </svg>
+                </div>
+                <h3 class="product-title">Pace Reader</h3>
+                <p class="product-tagline">Speed reading, the RSVP way</p>
+                <p class="product-description">
+                    A Safari extension for RSVP speed reading plus a native iOS app. Read faster by eliminating eye movement.
+                    Save articles to speed read later—share from Safari, extract via Action Sheet, or paste URLs directly in the app. Customize display and speed settings that sync across all devices.
+                </p>
+
+                <div class="product-media">
+                    <div class="media-tabs">
+                        <button class="media-tab active" data-media="screenshot">Screenshots</button>
+                        <button class="media-tab" data-media="demo">Demo</button>
+                    </div>
+                    <div class="media-content">
+                        <div class="media-item active" id="screenshot">
+                            <div class="screenshot-carousel">
+                                <div class="carousel-container">
+                                    <img class="carousel-image" src="assets/Simulator Screenshot - iPhone 17 Pro Max - 2026-01-27 at 12.52.56.png" alt="Pace Reader screenshot 1" loading="lazy">
+                                    <img class="carousel-image" src="assets/Simulator Screenshot - iPhone 17 Pro Max - 2026-01-27 at 12.53.06.png" alt="Pace Reader screenshot 2" loading="lazy">
+                                    <img class="carousel-image" src="assets/Simulator Screenshot - iPhone 17 Pro Max - 2026-01-27 at 12.53.20.png" alt="Pace Reader screenshot 3" loading="lazy">
+                                    <img class="carousel-image" src="assets/Simulator Screenshot - iPhone 17 Pro Max - 2026-01-27 at 12.53.28.png" alt="Pace Reader screenshot 4" loading="lazy">
+                                    <img class="carousel-image" src="assets/Simulator Screenshot - iPhone 17 Pro Max - 2026-01-27 at 12.53.52.png" alt="Pace Reader screenshot 5" loading="lazy">
+                                    <img class="carousel-image" src="assets/Simulator Screenshot - iPhone 17 Pro Max - 2026-01-27 at 12.53.56.png" alt="Pace Reader screenshot 6" loading="lazy">
+                                    <img class="carousel-image" src="assets/Simulator Screenshot - iPhone 17 Pro Max - 2026-01-27 at 12.54.00.png" alt="Pace Reader screenshot 7" loading="lazy">
+                                    <img class="carousel-image" src="assets/Simulator Screenshot - iPhone 17 Pro Max - 2026-01-27 at 12.54.06.png" alt="Pace Reader screenshot 8" loading="lazy">
+                                </div>
+                                <button class="carousel-nav carousel-prev" aria-label="Previous screenshot">‹</button>
+                                <button class="carousel-nav carousel-next" aria-label="Next screenshot">›</button>
+                                <div class="carousel-dots">
+                                    <button class="carousel-dot active" data-slide="0" aria-label="Screenshot 1"></button>
+                                    <button class="carousel-dot" data-slide="1" aria-label="Screenshot 2"></button>
+                                    <button class="carousel-dot" data-slide="2" aria-label="Screenshot 3"></button>
+                                    <button class="carousel-dot" data-slide="3" aria-label="Screenshot 4"></button>
+                                    <button class="carousel-dot" data-slide="4" aria-label="Screenshot 5"></button>
+                                    <button class="carousel-dot" data-slide="5" aria-label="Screenshot 6"></button>
+                                    <button class="carousel-dot" data-slide="6" aria-label="Screenshot 7"></button>
+                                    <button class="carousel-dot" data-slide="7" aria-label="Screenshot 8"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-item" id="demo">
+                            <video controls poster="assets/pace_reader2.jpeg">
+                                <source src="assets/pace_reader1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="product-features">
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        100-1000 WPM speed control with presets
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Optimal Recognition Point highlighting
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        iOS Share Sheet and Action Sheet integration
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Customizable display and behavior settings
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Alledgedly works with some web-based eBook stores in the Pacific Northwest (use the Safari extension feature)
+                    </li>
+                </ul>
+                <div class="product-platforms">
+                    <span class="platform">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        macOS
+                    </span>
+                    <span class="platform">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        iOS
+                    </span>
+                </div>
+                <div class="product-cta">
+                    <span class="price">Free</span>
+                    <span class="price-note">For now</span>
+                </div>
+            </div>
+
+            <div class="product-card" id="sorta-sleep">
+                <div class="product-badge">macOS App</div>
+                <div class="product-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="3"/>
+                        <path d="M32 16V32L44 38" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20 8L18 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M44 8L46 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="52" cy="12" r="3" fill="#fbbf24"/>
+                        <path d="M50 10L54 14M54 10L50 14" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="product-title">Sorta Sleep</h3>
+                <p class="product-tagline">Why won't your Mac sleep? Maybe find out.</p>
+                <p class="product-description">
+                    A native macOS diagnostic tool for investigating why your Mac refuses to sleep like a reasonable computer.
+                    Runs diagnostic checks across sleep prevention, wake issues, power configuration, and hardware.
+                    Uses Apple Intelligence to analyze raw pmset output and explain it in human words, because life's too short to read kernel logs.
+                    Since it uses Apple AI, it can only get better over time. Right? RIGHT, APPLE?!
+                    Applies fixes with full undo support, in case you break something.
+                </p>
+
+                <div class="product-media" id="sorta-sleep-media">
+                    <div class="media-tabs">
+                        <button class="media-tab active" data-media="sorta-screenshot" data-carousel="sorta-sleep">Screenshots</button>
+                    </div>
+                    <div class="media-content">
+                        <div class="media-item active" id="sorta-screenshot">
+                            <div class="screenshot-carousel" data-carousel="sorta-sleep">
+                                <div class="carousel-container">
+                                    <img class="carousel-image" src="assets/sorta_sleep/main.png" alt="Sorta Sleep main diagnostics view" loading="lazy">
+                                    <img class="carousel-image" src="assets/sorta_sleep/chart.png" alt="Sleep event timeline chart with zoom" loading="lazy">
+                                    <img class="carousel-image" src="assets/sorta_sleep/action-log.png" alt="Action log showing pmset commands" loading="lazy">
+                                    <img class="carousel-image" src="assets/sorta_sleep/ai-summary.png" alt="Apple AI powered analysis summary" loading="lazy">
+                                </div>
+                                <button class="carousel-nav carousel-prev" aria-label="Previous screenshot">‹</button>
+                                <button class="carousel-nav carousel-next" aria-label="Next screenshot">›</button>
+                                <div class="carousel-dots">
+                                    <button class="carousel-dot active" data-slide="0" aria-label="Screenshot 1"></button>
+                                    <button class="carousel-dot" data-slide="1" aria-label="Screenshot 2"></button>
+                                    <button class="carousel-dot" data-slide="2" aria-label="Screenshot 3"></button>
+                                    <button class="carousel-dot" data-slide="3" aria-label="Screenshot 4"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="product-features">
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Apple Intelligence summarizes diagnostics in plain English
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        24-hour drag-to-zoom timeline of sleep, wake, and dark wake events
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Monitors sleep assertions, caffeinate processes, battery, Bluetooth, USB
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        One-click fixes for Power Nap, WoL, Proximity Wake, TCP Keep Alive
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Full action log with undo, exportable, persisted across sessions
+                    </li>
+                </ul>
+                <div class="product-platforms">
+                    <span class="platform">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        macOS
+                    </span>
+                </div>
+                <div class="product-cta">
+                    <span class="price">Free</span>
+                    <span class="price-note">Your sanity? Priceless.</span>
+                </div>
+            </div>
+
+            <div class="coming-soon">
+                <h3>More barely functional software coming soon</h3>
+                <p>We're working on other things. They might work. We'll see.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>About</h2>
+                <div class="about-text">
+                    <p>
+                        <strong>Barely Working Code</strong> is a small software studio with modest ambitions
+                        and realistic expectations.
+                    </p>
+                    <p>
+                        We build tools that solve problems we actually have. No growth hacking,
+                        no synergy, no disruption. Just software that does a thing, probably.
+                    </p>
+                    <p>
+                        Our quality assurance process consists of running the code once
+                        and saying "good enough."
+                    </p>
+                </div>
+                <div class="about-values">
+                    <div class="value">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h4>Privacy First</h4>
+                        <p>Your data stays yours. We don't want it.</p>
+                    </div>
+                    <div class="value">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h4>No Bloat</h4>
+                        <p>Does one thing. Does it okay.</p>
+                    </div>
+                    <div class="value">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h4>Transparent</h4>
+                        <p>Some code visible. Terms vary.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">barely<span class="logo-accent">working</span>code</span>
+                <p>It works! Barely.</p>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="https://github.com/barelyworkingcode" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://github.com/barelyworkingcode/web/issues" target="_blank" rel="noopener">Report Issue</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Barely Working Code. All rights reserved.</p>
+                <p class="footer-disclaimer">*"Works" is a generous term. Results may vary. Not responsible for raised eyebrows.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Media tabs functionality - scoped to parent product card
+        document.querySelectorAll('.media-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const mediaType = tab.dataset.media;
+                const mediaContainer = tab.closest('.product-media');
+
+                // Update active tab within this product
+                mediaContainer.querySelectorAll('.media-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Update active media content within this product
+                mediaContainer.querySelectorAll('.media-item').forEach(item => item.classList.remove('active'));
+                mediaContainer.querySelector('#' + mediaType).classList.add('active');
+            });
+        });
+
+        // Screenshot carousel functionality - handles multiple carousels
+        document.querySelectorAll('.screenshot-carousel').forEach(carousel => {
+            const container = carousel.querySelector('.carousel-container');
+            const images = carousel.querySelectorAll('.carousel-image');
+            const totalSlides = images.length;
+            let currentSlide = 0;
+
+            function updateCarousel() {
+                container.style.transform = `translateX(-${currentSlide * 100}%)`;
+                carousel.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+            }
+
+            const prevBtn = carousel.querySelector('.carousel-prev');
+            const nextBtn = carousel.querySelector('.carousel-next');
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    updateCarousel();
+                });
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    updateCarousel();
+                });
+            }
+
+            carousel.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide = index;
+                    updateCarousel();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
