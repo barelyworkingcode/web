@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlook Email MCP Server - Barely Working Code</title>
+    <meta name="description" content="MCP server that lets Claude Desktop read your Outlook emails locally. No cloud connectors, no intermediary servers.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.barelyworkingcode.com/outlook-email-mcp.html">
+    <meta property="og:title" content="Outlook Email MCP Server - Barely Working Code">
+    <meta property="og:description" content="MCP server that lets Claude Desktop read your Outlook emails locally. No cloud connectors, no intermediary servers.">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <a href="/" class="logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="6" width="28" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 14L12 18L8 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="16" y1="22" x2="24" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="26" cy="10" r="2" fill="#ef4444"/>
+                </svg>
+                <span class="logo-text">barely<span class="logo-accent">working</span>code</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/#products">Products</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-detail">
+        <section class="product-hero">
+            <div class="product-badge">MCP Server</div>
+            <h1 class="product-title">Outlook Email MCP</h1>
+            <p class="product-hero-tagline">Your emails, analyzed by AI, staying on your machine.</p>
+            <p class="product-hero-description">
+                A Model Context Protocol server that gives Claude Desktop read-only access to your Outlook.com emails. Authenticates directly with the Microsoft Graph API using OAuth device flow. Emails are read locally&mdash;nothing passes through intermediary servers, cloud connectors, or third-party integrations. Also exports to Markdown if you want local archives.
+            </p>
+        </section>
+
+        <section class="product-section-block">
+            <h2>Why MCP Instead of a Cloud Connector?</h2>
+            <div class="comparison-grid">
+                <div>
+                    <h3>MCP (This Tool)</h3>
+                    <ul>
+                        <li>Emails read locally on your machine</li>
+                        <li>Direct Microsoft Graph API calls</li>
+                        <li>OAuth device login&mdash;you see the scopes</li>
+                        <li>Free forever</li>
+                        <li>Zero latency from intermediaries</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Cloud Connectors</h3>
+                    <ul>
+                        <li>Emails pass through third-party servers</li>
+                        <li>Proxied through vendor infrastructure</li>
+                        <li>Broad permissions you may not review</li>
+                        <li>Monthly subscription fees</li>
+                        <li>Added latency from extra hops</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section-block">
+            <h2>Claude Desktop Tools</h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <h4>list_email_folders</h4>
+                    <p>List all folders in your mailbox with email counts.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>get_recent_emails</h4>
+                    <p>Fetch emails from the last N days. Filter by unread or flagged.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>search_emails</h4>
+                    <p>Custom OData filter queries to search across your mailbox.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>get_email_by_id</h4>
+                    <p>Get full email content by ID, including attachments.</p>
+                </div>
+            </div>
+
+            <div class="example-prompts">
+                <h4>Example prompts for Claude Desktop</h4>
+                <ul>
+                    <li>"Check my inbox for emails from the last 3 days and summarize any action items"</li>
+                    <li>"Show me my unread emails"</li>
+                    <li>"Find all flagged emails and list what needs my attention"</li>
+                    <li>"Search for emails from boss@company.com about the Q4 report"</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="product-section-block">
+            <h2>CLI Export</h2>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line"><span class="prompt">$</span> python outlook_export.py --folders Inbox</div>
+                    <div class="terminal-line output">Exporting Inbox...</div>
+                    <div class="terminal-line output success">Exported 142 emails to ./mail/Inbox/</div>
+                    <div class="terminal-line">&nbsp;</div>
+                    <div class="terminal-line"><span class="prompt">$</span> python outlook_export.py --search "from:alice importance:high"</div>
+                    <div class="terminal-line output">Searching with OData filter...</div>
+                    <div class="terminal-line output success">Exported 8 emails to ./mail/Search/</div>
+                    <div class="terminal-line">&nbsp;</div>
+                    <div class="terminal-line"><span class="prompt">$</span> python outlook_export.py --reauth</div>
+                    <div class="terminal-line output">Device code: ABCD-EFGH</div>
+                    <div class="terminal-line output">Open https://microsoft.com/devicelogin</div>
+                    <div class="terminal-line output success">Authenticated. Token cached.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section-block">
+            <h2>Setup</h2>
+            <ol style="padding-left: var(--space-xl); color: var(--gray-600); line-height: 2.2;">
+                <li><strong style="color: var(--gray-800);">Authenticate:</strong> Run <code style="font-family: var(--font-mono); background: var(--gray-50); padding: 2px 6px; border-radius: 4px;">python outlook_export.py --reauth</code> and complete the device code login at Microsoft</li>
+                <li><strong style="color: var(--gray-800);">Configure Claude Desktop:</strong> Add the MCP server to your <code style="font-family: var(--font-mono); background: var(--gray-50); padding: 2px 6px; border-radius: 4px;">claude_desktop_config.json</code></li>
+                <li><strong style="color: var(--gray-800);">Restart Claude Desktop</strong> and start asking about your emails</li>
+            </ol>
+        </section>
+
+        <section class="product-section-block">
+            <h2>Features</h2>
+            <ul class="product-features">
+                <li>
+                    <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    OAuth device login&mdash;no passwords stored, no browser automation
+                </li>
+                <li>
+                    <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    Markdown export with attachments in organized folder structure
+                </li>
+                <li>
+                    <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    Resumable downloads with manifest tracking
+                </li>
+                <li>
+                    <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    Thread grouping for conversation context
+                </li>
+                <li>
+                    <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    OData filter support for advanced queries
+                </li>
+                <li>
+                    <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    Automatic token refresh&mdash;authenticate once, valid for ~90 days
+                </li>
+            </ul>
+        </section>
+
+        <div class="product-cta-block">
+            <span class="price">Free</span>
+            <span class="price-note">Your emails stay local. Your paranoia stays justified.</span>
+            <a href="https://github.com/barelyworkingcode" target="_blank" rel="noopener" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" style="width:20px;height:20px;">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                View on GitHub
+            </a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">barely<span class="logo-accent">working</span>code</span>
+                <p>It works! Barely.</p>
+            </div>
+            <div class="footer-links">
+                <a href="outlook-email-mcp.html">Outlook MCP</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="https://github.com/barelyworkingcode" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://github.com/barelyworkingcode/web/issues" target="_blank" rel="noopener">Report Issue</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025-2026 Barely Working Code. All rights reserved.</p>
+                <p class="footer-disclaimer">*"Works" is a generous term. Results may vary. Not responsible for raised eyebrows.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

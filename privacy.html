@@ -203,6 +203,56 @@
             <p><strong>Data Retention:</strong> Action logs are stored locally on your device until you delete them. No diagnostic data is persisted beyond the current session. No analytics or telemetry are collected.</p>
         </div>
 
+        <div class="product-section">
+            <h3>Eve Workspace (Self-Hosted Web App)</h3>
+            <p>
+                Eve Workspace is a self-hosted multi-LLM web interface that runs entirely on your machine.
+            </p>
+
+            <p><strong>Data Collection:</strong> None by us. Eve runs on your infrastructure. We have no servers, no telemetry, no way to collect anything.</p>
+
+            <p><strong>How It Works:</strong></p>
+            <ul>
+                <li><strong>Self-Hosted:</strong> You run the Node.js server locally. All data stays on your machine</li>
+                <li><strong>LLM Providers:</strong> Messages are sent to whichever LLM provider you configure (Claude, Gemini, LM Studio). Each provider's own privacy policy applies to data sent to their APIs</li>
+                <li><strong>Local Storage:</strong> Projects and settings are stored as JSON files in the application's data directory</li>
+                <li><strong>Authentication:</strong> WebAuthn passkeys for local access&mdash;no passwords stored, no accounts created with us</li>
+            </ul>
+
+            <p><strong>Third-Party Services:</strong></p>
+            <ul>
+                <li><strong>LLM Providers:</strong> Your conversations are sent to the provider APIs you configure. Review their respective privacy policies</li>
+                <li><strong>No Other Services:</strong> Eve does not phone home, check for updates, or communicate with any server besides the LLM providers you explicitly configure</li>
+            </ul>
+
+            <p><strong>Data Retention:</strong> All data is stored locally in your file system. Delete the data directory to remove everything. We retain nothing because we never receive anything.</p>
+        </div>
+
+        <div class="product-section">
+            <h3>Outlook Email MCP Server</h3>
+            <p>
+                An MCP server that gives Claude Desktop read-only access to your Outlook.com emails.
+            </p>
+
+            <p><strong>Data Collection:</strong> None. We do not collect, store, or transmit any personal data.</p>
+
+            <p><strong>How It Works:</strong></p>
+            <ul>
+                <li><strong>Direct API Access:</strong> Connects directly to the Microsoft Graph API from your machine. No intermediary servers</li>
+                <li><strong>Local Export:</strong> Emails are exported as Markdown files to a local directory on your machine</li>
+                <li><strong>Token Storage:</strong> OAuth tokens are cached locally in <code>.token_cache.json</code> in the application directory</li>
+                <li><strong>Read-Only:</strong> Requests only <code>Mail.Read</code> scope&mdash;cannot send, modify, or delete emails</li>
+            </ul>
+
+            <p><strong>Authentication:</strong></p>
+            <ul>
+                <li><strong>OAuth Device Flow:</strong> Uses Microsoft's standard device code authentication. You authenticate directly with Microsoft&mdash;no credentials pass through our code</li>
+                <li><strong>Token Refresh:</strong> Cached tokens auto-refresh for approximately 90 days before requiring re-authentication</li>
+            </ul>
+
+            <p><strong>Data Retention:</strong> Exported emails and cached tokens are stored locally until you delete them. The MCP server reads emails on demand and does not maintain a persistent cache beyond what you explicitly export.</p>
+        </div>
+
         <h2>Website</h2>
         <p>
             This website (barelyworkingcode.com) is a static site hosted on Cloudflare Pages.
@@ -244,12 +294,13 @@
                 <p>It works! Barely.</p>
             </div>
             <div class="footer-links">
+                <a href="outlook-email-mcp.html">Outlook MCP</a>
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="https://github.com/barelyworkingcode" target="_blank" rel="noopener">GitHub</a>
                 <a href="https://github.com/barelyworkingcode/web/issues" target="_blank" rel="noopener">Report Issue</a>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2025 Barely Working Code. All rights reserved.</p>
+                <p>&copy; 2025-2026 Barely Working Code. All rights reserved.</p>
                 <p class="footer-disclaimer">*"Works" is a generous term. Results may vary. Not responsible for raised eyebrows.</p>
             </div>
         </div>

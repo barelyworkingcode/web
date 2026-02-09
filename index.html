@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barely Working Code - It works! Barely.</title>
-    <meta name="description" content="Software that technically functions. Home of Pace Reader and Sorta Sleep - apps that probably work.">
+    <meta name="description" content="Software that technically functions. Home of Eve Workspace, Pace Reader, and Sorta Sleep - apps that probably work.">
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.barelyworkingcode.com/">
     <meta property="og:title" content="Barely Working Code - It works! Barely.">
-    <meta property="og:description" content="Software that technically functions. Home of Pace Reader and Sorta Sleep - apps that probably work.">
+    <meta property="og:description" content="Software that technically functions. Home of Eve Workspace, Pace Reader, and Sorta Sleep - apps that probably work.">
     <meta property="og:image" content="https://www.barelyworkingcode.com/assets/og-image.svg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.barelyworkingcode.com/">
     <meta property="twitter:title" content="Barely Working Code - It works! Barely.">
-    <meta property="twitter:description" content="Software that technically functions. Home of Pace Reader and Sorta Sleep - apps that probably work.">
+    <meta property="twitter:description" content="Software that technically functions. Home of Eve Workspace, Pace Reader, and Sorta Sleep - apps that probably work.">
     <meta property="twitter:image" content="https://www.barelyworkingcode.com/assets/og-image.svg">
 
     <link rel="stylesheet" href="styles.css">
@@ -88,6 +88,116 @@
             </div>
 
             <div class="product-card featured">
+                <div class="product-badge">Self-Hosted Web App</div>
+                <div class="product-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="8" width="56" height="48" rx="4" stroke="currentColor" stroke-width="3"/>
+                        <line x1="22" y1="8" x2="22" y2="56" stroke="currentColor" stroke-width="3"/>
+                        <rect x="8" y="16" width="10" height="2" rx="1" fill="currentColor" opacity="0.4"/>
+                        <rect x="8" y="22" width="8" height="2" rx="1" fill="currentColor" opacity="0.3"/>
+                        <rect x="8" y="28" width="10" height="2" rx="1" fill="currentColor" opacity="0.4"/>
+                        <rect x="8" y="34" width="6" height="2" rx="1" fill="currentColor" opacity="0.3"/>
+                        <rect x="28" y="16" width="26" height="2" rx="1" fill="currentColor" opacity="0.5"/>
+                        <rect x="28" y="22" width="20" height="2" rx="1" fill="currentColor" opacity="0.3"/>
+                        <rect x="28" y="28" width="24" height="2" rx="1" fill="currentColor" opacity="0.4"/>
+                        <rect x="28" y="34" width="18" height="2" rx="1" fill="currentColor" opacity="0.3"/>
+                        <rect x="28" y="40" width="22" height="2" rx="1" fill="currentColor" opacity="0.4"/>
+                        <circle cx="52" cy="12" r="3" fill="#22c55e"/>
+                    </svg>
+                </div>
+                <h3 class="product-title">Eve Workspace</h3>
+                <p class="product-tagline">Your AI workspace. Self-hosted, self-aware of its limitations.</p>
+                <p class="product-description">
+                    A multi-provider LLM web interface you run on your own machine. Chat with Claude, Gemini, or local models through a single UI. Warm-started persistent processes mean no cold boot penalties between messages. Real-time token and cost tracking so you can watch your money disappear in real time. Includes a file browser, Monaco editor, scheduled tasks, and a terminal&mdash;because apparently one IDE wasn't enough.
+                </p>
+
+                <div class="product-media">
+                    <div class="media-tabs">
+                        <button class="media-tab active" data-media="eve-screenshot">Screenshots</button>
+                    </div>
+                    <div class="media-content">
+                        <div class="media-item active" id="eve-screenshot">
+                            <div class="screenshot-carousel" data-aspect="landscape">
+                                <div class="carousel-container">
+                                    <img class="carousel-image" src="assets/eve/overview.png" alt="Eve Workspace overview" loading="lazy">
+                                    <img class="carousel-image" src="assets/eve/claude-chat.png" alt="Claude chat session in Eve" loading="lazy">
+                                    <img class="carousel-image" src="assets/eve/editor.png" alt="Monaco code editor" loading="lazy">
+                                    <img class="carousel-image" src="assets/eve/new-project.png" alt="Create new project dialog" loading="lazy">
+                                    <img class="carousel-image" src="assets/eve/file-explorer.png" alt="File explorer panel" loading="lazy">
+                                    <img class="carousel-image" src="assets/eve/scheduled-tasks.png" alt="Scheduled task execution results" loading="lazy">
+                                    <img class="carousel-image" src="assets/eve/terminal.png" alt="Integrated terminal" loading="lazy">
+                                </div>
+                                <button class="carousel-nav carousel-prev" aria-label="Previous screenshot">&#8249;</button>
+                                <button class="carousel-nav carousel-next" aria-label="Next screenshot">&#8250;</button>
+                                <div class="carousel-dots">
+                                    <button class="carousel-dot active" data-slide="0" aria-label="Screenshot 1"></button>
+                                    <button class="carousel-dot" data-slide="1" aria-label="Screenshot 2"></button>
+                                    <button class="carousel-dot" data-slide="2" aria-label="Screenshot 3"></button>
+                                    <button class="carousel-dot" data-slide="3" aria-label="Screenshot 4"></button>
+                                    <button class="carousel-dot" data-slide="4" aria-label="Screenshot 5"></button>
+                                    <button class="carousel-dot" data-slide="5" aria-label="Screenshot 6"></button>
+                                    <button class="carousel-dot" data-slide="6" aria-label="Screenshot 7"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="product-features">
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Multi-provider: Claude, Gemini, LM Studio (local models)
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Persistent CLI processes with warm starts
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Real-time token and cost tracking
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Integrated tools: file browser, editor, tasks, terminal
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        WebAuthn passkey authentication
+                    </li>
+                </ul>
+                <div class="product-platforms">
+                    <span class="platform">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon">
+                            <path d="M16 18l2-2-2-2M8 18l-2-2 2-2M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Browser
+                    </span>
+                    <span class="platform">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M2 17l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M2 12l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Node.js
+                    </span>
+                </div>
+                <div class="product-cta">
+                    <span class="price">Free</span>
+                    <span class="price-note">Open source. Your infrastructure, your problem.</span>
+                </div>
+            </div>
+
+            <div class="product-card" id="pace-reader">
                 <div class="product-badge">Safari Extension</div>
                 <div class="product-icon">
                     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -296,8 +406,8 @@
             </div>
 
             <div class="coming-soon">
-                <h3>More barely functional software coming soon</h3>
-                <p>We're working on other things. They might work. We'll see.</p>
+                <h3>More barely functional software in progress</h3>
+                <p>We keep making things. The quality bar remains consistently low.</p>
             </div>
         </section>
 
@@ -361,16 +471,21 @@
                 <p>It works! Barely.</p>
             </div>
             <div class="footer-links">
+                <a href="outlook-email-mcp.html">Outlook MCP</a>
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="https://github.com/barelyworkingcode" target="_blank" rel="noopener">GitHub</a>
                 <a href="https://github.com/barelyworkingcode/web/issues" target="_blank" rel="noopener">Report Issue</a>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2025 Barely Working Code. All rights reserved.</p>
+                <p>&copy; 2025-2026 Barely Working Code. All rights reserved.</p>
                 <p class="footer-disclaimer">*"Works" is a generous term. Results may vary. Not responsible for raised eyebrows.</p>
             </div>
         </div>
     </footer>
+
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="">
+    </div>
 
     <script>
         // Media tabs functionality - scoped to parent product card
@@ -426,6 +541,26 @@
                     updateCarousel();
                 });
             });
+        });
+
+        // Lightbox for landscape carousel images
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        document.querySelectorAll('.screenshot-carousel[data-aspect="landscape"] .carousel-image').forEach(img => {
+            img.addEventListener('dblclick', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') lightbox.classList.remove('active');
         });
     </script>
 </body>
